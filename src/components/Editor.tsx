@@ -8,7 +8,7 @@ export const data: Data = {
     {
       type: 'HeadingBlock',
       props: {
-        title: 'This is a fabulos heading',
+        title: 'A New Day Has Dawned.',
         id: 'HeadingBlock-1694032984497',
       },
     },

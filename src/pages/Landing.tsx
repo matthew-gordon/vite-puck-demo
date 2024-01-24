@@ -7,7 +7,7 @@ export default function Landing() {
         <h1>Welcome to your internal docs.</h1>
       </div>
       <div>
-        <Link to="editor">Go to the docs editor</Link>
+        <Link to="/site">Go to your docs</Link>
       </div>
     </div>
   );

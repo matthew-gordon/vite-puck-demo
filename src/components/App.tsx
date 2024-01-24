@@ -1,9 +1,13 @@
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Editor } from './Editor';
 import { Site } from '../pages/Site';
 import Landing from '../pages/Landing';
 
 function App() {
+  const { pathname } = useLocation();
+
+  const isPreview = pathname === '/site';
+
   return (
     <>
       <nav
@@ -12,14 +16,15 @@ function App() {
           justifyContent: 'space-between',
         }}
       >
-        <Link to="/site">
-          <button>View my site</button>
+        <Link to="/">Home</Link>
+        <Link to={isPreview ? '/site/edit' : '/site'}>
+          <button>{isPreview ? 'Go to editor' : 'View my site'}</button>
         </Link>
       </nav>
       <Routes>
         <Route index element={<Landing />} />
-        <Route path="editor" element={<Editor />} />
         <Route path="site" element={<Site />} />
+        <Route path="site/edit" element={<Editor />} />
       </Routes>
     </>
   );

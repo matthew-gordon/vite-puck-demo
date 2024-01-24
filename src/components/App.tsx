@@ -1,7 +1,7 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Editor } from './Editor';
-import { Site } from '../pages/Site';
 import Landing from '../pages/Landing';
+import Site from '../pages/Site';
 
 function App() {
   const { pathname } = useLocation();

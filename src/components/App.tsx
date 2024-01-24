@@ -1,15 +1,15 @@
-import { Routes, Route, Link } from "react-router-dom";
-import { Editor } from "./Editor";
-import { Site } from "../pages/Site";
-import Landing from "../pages/Landing";
+import { Routes, Route, Link } from 'react-router-dom';
+import { Editor } from './Editor';
+import { Site } from '../pages/Site';
+import Landing from '../pages/Landing';
 
 function App() {
   return (
     <>
       <nav
         style={{
-          display: "flex",
-          justifyContent: "space-between",
+          display: 'flex',
+          justifyContent: 'space-between',
         }}
       >
         <Link to="/site">

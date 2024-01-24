@@ -1,4 +1,4 @@
-import type { Config } from "@measured/puck";
+import type { Config } from '@measured/puck';
 
 type Components = {
   HeadingBlock: {
@@ -10,10 +10,10 @@ export const config: Config<Components> = {
   components: {
     HeadingBlock: {
       fields: {
-        title: { type: "text" },
+        title: { type: 'text' },
       },
       defaultProps: {
-        title: "Heading",
+        title: 'Heading',
       },
       render: ({ title }) => (
         <div style={{ padding: 64 }}>
